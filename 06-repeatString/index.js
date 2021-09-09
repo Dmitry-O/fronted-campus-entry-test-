@@ -4,5 +4,6 @@
  * @returns {string} - returns the new string
  */
 export const repeatString = (str = '') => {
-
+  return str.toUpperCase().split('').map((e, i) => e += e.repeat(i).toLowerCase()).join('-');
 }
+
